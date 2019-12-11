@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PhoneGap App - Lista de Tarefas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="display-4">App Tarefas</h1>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-12">
+                <h2>Criar tarefas</h2>
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="tarefa" class="sr-only">Tarefa:</label>
+                        <input type="text" id="tarefa" placeholder="Digite a tarefa" required class="form-control" maxlength="50">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </form>
+            </div>
+
+            <div class="col-sm-12">
+                <h2>Lista de tarefas salvas</h2>
+                <hr>
+                <ul class="list-group" id="lista"></ul>
+            </div>
+
+        </div> <!-- Fim da row -->
+    </div> <!-- Fim da container -->
+
+    <!-- Script de compilação do framework -->
+    <script src="cordova.js"></script>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
